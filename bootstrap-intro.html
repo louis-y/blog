@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BOOTSTRAP 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel&amp;Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+	<style>
+        body {
+            margin: 30px;
+			font-family: Abel; color: #fff;
+        }
+        .my-container {
+            background: #fff;
+        }
+        .my-row {
+			background: #fecbdf;
+			height: 300px;
+        }
+        .my-col {
+			border: 0.5px solid #82f2b3;
+			background: #fc5495;
+			opacity: 0.7;
+            
+        }
+		.iq-mt-20 {
+			margin-top: 20px;
+		}
+    </style>
+	
+</head>
+
+<body>
+    <div class="container my-container">
+        <div class="row justify-content-start my-row">
+            <div class="col-sm-6 align-items-stretch my-col">
+                Row 1 Col 1 Pic
+            </div>
+			<div class="col-sm-5 align-self-center offset-md-1 my-col">
+			    Row 1 Col 2 Text
+			</div>
+        </div>
+		
+        <div class="row flex-row-reverse justify-content-start my-row iq-mt-20">
+            <div class="col-sm-6 align-items-stretch offset-md-1  my-col">
+                Row 2 Col 1 Pic
+            </div>
+			<div class="col-sm-5 align-self-center my-col">
+			    Row 2 Col 2 Text
+			</div>
+        </div>
+		
+		<div class="row justify-content-start my-row">
+		    <div class="col-sm-6 align-items-stretch my-col">
+		        Row 1 Col 1 Pic
+		    </div>
+			<div class="col-sm-5 align-self-center offset-md-1 my-col">
+			    Row 1 Col 2 Text
+			</div>
+		</div>
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		<div class="row justify-content-center my-row iq-mt-20">
+		    <div class="col-sm-6 align-items-stretch my-col">
+		        Row 1 Col 1 Pic
+		    </div>
+		</div>
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		<div class="row flex-row-reverse justify-content-start my-row iq-mt-20">
+		    <div class="col-sm-6 align-items-stretch offset-md-1  my-col">
+		        Row 2 Col 1 Pic
+		    </div>
+			<div class="col-sm-5 align-self-center my-col">
+			    Row 2 Col 2 Text
+			</div>
+		</div>
+    </div>
+	
+</body>
+
+</html>

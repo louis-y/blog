@@ -1,0 +1,123 @@
+/*
+
+Template: Showkase - Minimal Portfolio Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+
+NOTE: This file contains the styling for responsive Template.
+
+*/
+
+
+/*****************
+================================================
+ (  Media Queries  )
+================================================
+ *******************/
+
+
+/* Displays/Screens (e.g. 24" WS @ 1920x1080) -------------- */
+
+@media only screen and (min-width: 1890px) and (max-width:2529px) {
+
+}
+
+@media(max-width:1399px) {
+
+}
+
+@media(max-width:1199px) {
+ .iq-objects .iq-objects-02 {bottom: -10%;right: 10%;}
+ .iq-objects .iq-objects-03 {bottom: -40%;}	
+ .iq-team1 .team-blog:hover .team-description{font-size: 14px;}
+ .iq-team1 .team-blog .team-social ul li a {padding: 6px;}
+ .iq-team1 .team-blog .team-social ul li a i {font-size: 16px;}
+ .creative-banner .creative-text h1{font-size:40px; line-height:45px;}
+ .creative-banner .creative-text h4{font-size:20px; line-height:24px;}
+ .rotating-text .iq-mt-100{ margin-top: 40px;}
+ .rotating-text h1 {font-size: 46px; line-height: 50px;}
+ .rotating-text h4 {font-size: 20px; line-height: 24px;}
+ .rotating-text.overview-block-ptb {padding: 60px 0;}
+ .simple-text h1 { font-size:46px; line-height: 50px;}
+ .simple-text h4 { font-size:20px; line-height: 24px;}
+ .content.iq-mtb-100.iq-pt-100 { padding-top:50px; }
+ .text-box h1 { font-size: 40px; line-height: normal; }
+}
+
+
+@media(max-width:992px) {
+ .iq-objects .iq-objects-01 {bottom: -10%;left: 70%;}
+ .iq-objects .iq-objects-02 { bottom: -30%; right: 0;}
+ .iq-objects .iq-objects-03 {bottom: -60%;}	
+ .overview-block-ptb { padding: 60px 0;}
+ .re-mt-0{margin-top: 30px;}
+.iq-team1 .team-blog .team-description { font-size: 14px;}
+.iq-tab1 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {font-size: 16px;}
+.iq-copyright { margin-top: 0 !important; }
+.about-box h1{font-size: 42px; line-height:50px;} 
+.creative-details{padding:0;}
+.creative-details:before{ background: none !important; }
+.creative-text {top: 40%; left: 45%; text-align: left !important;padding: 0;padding-left: 100px;}
+.creative-text .owl-item .cloned{ width: auto !important;}
+.content.iq-mtb-100.iq-pt-100 { padding-top:0; }
+.content .grid { margin-bottom: 80px; }
+.content-wrap { margin-top: 80px; }
+}
+
+
+@media(max-width:979px) {
+
+}
+
+@media(max-width:767px) {
+.iq-objects .iq-objects-01, .iq-objects .iq-objects-02, .iq-objects .iq-objects-03,  .iq-objects .iq-objects-04 { display: none; }	
+.footer-bottom, .iq-footer3 .iq-media-blog{text-align:center;}
+.iq-tab1 .nav-tabs .nav-item{ width:100%; margin-bottom: 20px;}
+.iq-footer1 .iq-menu, .iq-footer1 .contact {float: inherit; text-align: center; margin-top: 20px; display: inline-block;}
+.iq-footer1 .iq-menu li{ margin:0 10px 0 0;}
+.iq-footer1 .text-right{text-align: left!important;}
+.creative-details.text-right:before { display: none; }
+.iq-footer1 .iq-media-blog { margin-bottom: 20px;}
+.portfolio-simpal .simpal-details h3{ font-size: 20px; line-height: 24px; }
+.portfolio-simpal .simpal-details span{ font-size: 16px; line-height: 20px; }
+.portfolio-simpal .simpal-details .iq-zoom { font-size: 24px;}
+.portfolio-snip .snip-details .item-title{font-size: 16px;line-height: 18px;}
+.portfolio-snip .snip-details .category { font-size: 12px; margin-top:0; line-height: 12px;}
+.portfolio-snip .iq-full i{font-size: 34px; line-height: 36px;}
+.about-box h1{font-size: 36px; line-height:40px;} 
+.about-box h5 {font-size: 16px;line-height: 24px;}
+.iq-blog-box .iq-blog-detail .iq-blog-meta a{ font-size: 14px; }
+.heading-title p{ padding:0;}
+.creative-banner .creative-text h1{font-size:24px; line-height:30px;}
+.creative-banner .creative-text h4{font-size:16px; line-height:20px;}
+.creative-text {left:43%;}
+.content-3d h1 {font-size:32px; line-height:36px; margin-bottom: 20px;}
+.canvas-text h1 {font-size:32px; line-height:36px; margin-bottom: 20px;}
+.rotating-text .iq-mt-100{ margin-top:0;}
+.rotating-text .iq-pt-30 {padding-top: 0;}
+.rotating-text h1 { font-size:26px; line-height: 30px;}
+.rotating-text h4 { font-size:14px; line-height: 16px;}
+.banner-stars h1 { font-size:30px; line-height: 36px;}
+.banner-stars h4 { font-size:18px; line-height: 24px;}
+.simple-text h1 { font-size:30px; line-height: 36px;}
+.simple-text h4 { font-size:18px; line-height: 24px;}
+.simple-text h1 { font-size:30px; line-height: 36px;}
+.simple-text h4 { font-size:18px; line-height: 20px;}
+.simple-text p{padding: 0 20px;}
+.banner-stars .stars-text {margin-top: 25%;}
+.grid .pieces { grid-area: 1 / 1 / 3 / 2; width: calc(var(--pieces-width) * 3.7); height: calc(var(--pieces-width) * 4.5);  margin-bottom: 30px; }
+
+.content.iq-mtb-100.iq-pt-100 { margin-top: 50px; }
+.content-wrap { margin-top: 0; }
+ .text-box h1 { font-size: 30px; }
+
+
+}
+
+@media(max-width:479px) {
+.iq-team1 .team-blog:hover .team-description{font-size: 18px;}
+.iq-team1 .team-blog .team-social ul li a {padding: 10px;}
+.iq-team1 .team-blog .team-social ul li a i {font-size: 18px;}
+.banner-stars .stars-text {margin-top: 50%;}
+}

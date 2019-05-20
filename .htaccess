@@ -1,5 +1,6 @@
+Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\. [OR,NC]
+RewriteCond %{HTTPS} off 
+RewriteRule ^ https://www.domain.com%{REQUEST_URI} [NE,R=301,L]

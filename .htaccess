@@ -1,6 +1,7 @@
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} ^louis-yau\.com [NC]
+RewriteCond %{HTTP_HOST} ^www\.louis-yau\.com [NC]
 RewriteRule ^(.*)$ http://www.louis-yau.com/$1 [L,R=301,NC]
 
 RewriteCond %{HTTPS} !on

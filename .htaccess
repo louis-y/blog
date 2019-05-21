@@ -1,6 +1,5 @@
-Options +FollowSymLinks
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} !^www\. [OR,NC]
-RewriteCond %{HTTPS} off 
-RewriteRule ^ https://www.louis-yau.com%{REQUEST_URI} [NE,R=301,L]
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://www.louis-yau.com/$1 [L,R=301,NC]
+</IfModule>

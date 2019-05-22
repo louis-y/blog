@@ -455,8 +455,8 @@ header.hd-border.menu-sticky { box-shadow: none; }
 -----------------------------------------------------------------------*/
 	
 .instaimg img {
-	height: 265px;
-	width: 265px;
+	height: 233px;
+	width: 233px;
 	object-fit: cover;
 }
 

@@ -450,25 +450,27 @@ header.hd-border.menu-sticky { box-shadow: none; }
 .iq-footer2 .iq-copyright { color: #8d8b8b; font-size: 12px; padding: 5px; margin-right: 40px; padding-top: 30px;}
 .iq-footer2 .iq-copyright a { color: #8d8b8b; font-size: 12px;}
 
-.insta-widget {
-	width: 100%;
+/*---------------------------------------------------------------------
+                                Instafeed
+-----------------------------------------------------------------------*/
 	
+.instaimg img {
+	height: 265px;
+	width: 265px;
+	object-fit: cover;
 }
 
-.instaimg img {margin-bottom:0px;}
 .instaimg img:hover {
 	opacity:0.8;
 	-moz-opacity:0.8;
 	-webkit-opacity:0.8;
 }
 
-#instafeed a img {
-   height: 250px;
-   width: 250px;
-   object-fit: cover;
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+  #instafeed a:nth-child(n+5) {
+      display: none;
+  }
 }
-
-
 
 /*---------------------------------------------------------------------
                              Text Rotating

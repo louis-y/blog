@@ -6,9 +6,8 @@ var width = $(window).width();
 if ( width <= 768) {
     limitWidth = 4;
 } else {
-    limitWidth = 5;
+    limitWidth = 12;
 }
-
     var userFeed = new Instafeed({
         get: 'user',
         userId: '1991302157',

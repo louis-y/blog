@@ -173,21 +173,20 @@
 	
 	<!--======= End Main Page =======-->
 	
-    <!-- Footer-->
+    <div class="instagram_feed grey-bg iq-pt-50 iq-plr-50">
+		<div id="instagram-feed"></div>
+	<div>	
+	
 		
-	<div class="container-fluid grey-bg iq-pt-50">
-		<div class="row justify-content-center">
-			<div class="col-sm-10 instaimg">
-				<div id="instafeed"></div>
-			</div>
-		</div>
-	</div>
-		
-    <footer class="iq-footer2 grey-bg iq-copyright text-right">
+	
+	<!-- Footer-->
+    <footer class="iq-footer1 grey-bg iq-copyright text-right">
     	<div class="iq-copyright text-right">
     	    <div class="iq-copyright">Copyright &copy; 2019 Louis Yau. All Rights Reserved.</div>
     	</div>
     </footer>
+	
+	
     	
     <!-- Footer End -->
     	
@@ -207,10 +206,27 @@
     <!-- DISQUS -->
     <script id="dsq-count-scr" src="//louis-yau.disqus.com/count.js" async></script>
     <!-- Instafeed -->
-    <script src="js/instafeed/bootstrap.min.js"></script>
-    <script src="js/instafeed/jquery.min.js"></script>
-    <script src="js/instafeed/instafeed.min.js"></script>
-    <script src="js/instafeed/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.instagramfeed.min.js"></script>
+    <script type="text/javascript">
+    	(function($){
+    		$(window).on('load', function(){				
+    			$.instagramFeed({
+    				'cors_proxy': "https://cors-anywhere.herokuapp.com/https://www.instagram.com/",
+    				'username': 'louisanyau',
+    				'container': "#instagram-feed",
+    				'display_profile': false,
+    				'display_biography': false,
+    				'display_gallery': true,
+    				'get_raw_json': false,
+    				'callback': null,
+    				'styling': true,
+    				'items': 6,
+    				'items_per_row': 6,
+    				'margin': 0
+    			});
+    		});
+    	})(jQuery);
+    </script>
     
 	</body>
     

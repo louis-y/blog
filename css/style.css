@@ -13,6 +13,11 @@ h5 { font-size: 20px; font-style: normal; line-height: 28px; }
 h6 { font-size: 13px; font-style: normal; line-height: 26px; color: #adadad; }
 h7 { font-family: 'Raleway', sans-serif; font-weight: normal; font-style: italic; font-size: 13px; line-height: 30px; }
 .lead { font-size: 16px; line-height: 26px; margin: 0; }
+h7 a { font-family: 'Raleway', sans-serif; font-weight: normal; font-style: italic; font-size: 13px; line-height: 30px; }
+.lead { font-size: 16px; line-height: 26px; margin: 0; }
+h8 a { font-family: 'Playfair Display'; font-weight: 100; font-style: italic; font-size: 16px; line-height: 30px; text-decoration: underline;
+}
+.lead { font-size: 16px; line-height: 26px; margin: 0; }
 ul { margin: 0px; padding: 0px; }
 li { list-style: none; }
 hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px; }
@@ -474,15 +479,6 @@ instagram_feed {
 .iq-comment-list .reply:hover { color: #fff; }
 .iq-comment-list .iq-comments-media .iq-comments-info .reply { color: #ffffff; }
 
-.page-btn span {
-  font-family: Old Standard TT;
-  font-size: 20px;
-  font-weight: none;
-  font-style: none;
-  text-decoration: underline;
-  margin-right: 20px; 
-}
-
 .post-signature {
     width: 1px; 
     
@@ -578,11 +574,11 @@ instagram_feed {
                             Home grid
 -----------------------------------------------------------------------*/
 .content { position: relative; --pieces-width: 30vw; }
-.content-box { position: relative; --pieces-width: 30vw; background: #ffffff; padding: 20px; margin-top: -100px;
+.content-box { position: relative; --pieces-width: 30vw; background: #ffffff; padding-top: 20px; 
 }
-.grid__item { width: 100%; padding: 0px 
+.grid__item { width: 100%; 
 }
-.grid__item-featured { width: 100%; padding: 0px
+.grid__item-featured { width: 100%; 
 }
 .grid__item-deco { position: relative; }
 .grid__item-title { position: relative; }

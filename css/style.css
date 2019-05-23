@@ -28,6 +28,14 @@ hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px;
 .no-gutter>[class*='col-'] { padding-right: 0; padding-left: 0; }
 .no-padding { padding: 0px !important; }
 .no-border { border: none !important; }
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
 
 /*---------------------------------------------------------------------
                     Page Section Margin Padding 
@@ -402,27 +410,16 @@ header.hd-border.menu-sticky { box-shadow: none; }
 /*----------------------------------------------------------------------
                               Archive
 ----------------------------------------------------------------------*/
-.column-4 .grid-item { width: 25%; padding: 0; }
-.column-space .grid-item { padding: 0 15px; margin-bottom: 30px; }
-@media screen and (max-width:1024px) {
-  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 33.3333%; }
-}
-@media screen and (max-width:992px) {
-  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 50%; }
-}
-@media screen and (max-width:599px) {
-  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 100%; }
+
+.archive-post img:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
 }
 
-/*---- archive post ----*/
-.archive-post { position: relative; margin-bottom: 450px;
-}
-.archive-post .post-details { position: absolute; top: 0; left: 0; display: inline-block; width: 100%; height: 100%; background: rgba(250, 123, 128, 0.85); padding: 30px; opacity: 0; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; }
-.archive-post .post-details .iq-zoom { position: absolute; bottom: 25px; right: 30px; font-size: 34px; color: #fff; }
-.archive-post .post-details h3 { margin-top: 5px; }
-.archive-post .post-details h3 a:hover { color: #1a1a1a; }
-.archive-post .post-details:hover { opacity: 1; }
-
+.post-title { text-align: center; width: 100%; margin-top: 15px; }
+.post-title span { font-family: 'Raleway'; font-style: italic; font-size: 14px; }
+.post-title p { font-family: 'Playfair Display'; font-size: 18px; line-height: 30px; }
 
 /*---------------------------------------------------------------------
                                 Contact
@@ -443,6 +440,19 @@ header.hd-border.menu-sticky { box-shadow: none; }
 /*---------------------------------------------------------------------
                                 Footer
 -----------------------------------------------------------------------*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
 
 .iq-footer .iq-copyright { color: #8d8b8b; font-size: 12px; padding: 5px; margin-right: 0px; }
 

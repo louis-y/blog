@@ -29,7 +29,6 @@ hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px;
 .no-padding { padding: 0px !important; }
 .no-border { border: none !important; }
 
-
 /*---------------------------------------------------------------------
                     Page Section Margin Padding 
 ---------------------------------------------------------------------*/
@@ -400,6 +399,31 @@ header.hd-border.menu-sticky { box-shadow: none; }
   .menu li>ul ul:hover { transform: initial; }
 }
 
+/*----------------------------------------------------------------------
+                              Archive
+----------------------------------------------------------------------*/
+.column-4 .grid-item { width: 25%; padding: 0; }
+.column-space .grid-item { padding: 0 15px; margin-bottom: 30px; }
+@media screen and (max-width:1024px) {
+  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 33.3333%; }
+}
+@media screen and (max-width:992px) {
+  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 50%; }
+}
+@media screen and (max-width:599px) {
+  .column-3 .grid-item, .column-4 .grid-item, .column-5 .grid-item { width: 100%; }
+}
+
+/*---- archive post ----*/
+.archive-post { position: relative; margin-bottom: 450px;
+}
+.archive-post .post-details { position: absolute; top: 0; left: 0; display: inline-block; width: 100%; height: 100%; background: rgba(250, 123, 128, 0.85); padding: 30px; opacity: 0; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; }
+.archive-post .post-details .iq-zoom { position: absolute; bottom: 25px; right: 30px; font-size: 34px; color: #fff; }
+.archive-post .post-details h3 { margin-top: 5px; }
+.archive-post .post-details h3 a:hover { color: #1a1a1a; }
+.archive-post .post-details:hover { opacity: 1; }
+
+
 /*---------------------------------------------------------------------
                                 Contact
 -----------------------------------------------------------------------*/
@@ -420,23 +444,14 @@ header.hd-border.menu-sticky { box-shadow: none; }
                                 Footer
 -----------------------------------------------------------------------*/
 
-.iq-footer1 .iq-logo { width: 30px; float: left; }
-.iq-footer1 .iq-menu { display: inline; float: right; }
-.iq-footer1 .iq-menu li { float: left; margin-left: 30px; }
-.iq-footer1 .iq-media-blog { margin: 0; padding: 0; }
-.iq-footer1 .iq-media-blog li { display: inline-block; list-style: none; padding: 0; margin: 0 4px; }
-.iq-footer1 .iq-media-blog li a { display: block; width: 40px; height: 40px; line-height: 40px; font-size: 16px; color: #242424; background: transparent; border: 1px solid #242424; text-align: center; border-radius: 50%; }
-.iq-footer1 .iq-media-blog li a:hover { color: #ffffff; border: 1px solid #adadad; background: #adadad; }
-.iq-footer1 .contact { float: right; margin-top: 20px; }
-.iq-footer1 .iq-copyright { color: #8d8b8b; font-size: 12px; padding: 5px; margin-right: 0px; }
-.iq-footer1 .iq-copyright a { color: #8d8b8b; font-size: 12px;}
-.iq-footer2 .iq-copyright { color: #8d8b8b; font-size: 12px; padding: 5px; margin-right: 40px; padding-bottom: 30px;}
-.iq-footer2 .iq-copyright a { color: #8d8b8b; font-size: 12px;}
-
+.iq-footer .iq-copyright { background: #f7f7f7; width: 100%; 
+}
+.iq-footer .iq-copyright a { float: right; font-size: 12px; color: #8d8b8b; padding: 15px;
+}
 @media (max-width:767px) {
-  .iq-footer1 .iq-copyright {
-      font-size: 10px; padding: 0px; margin-right: 0px; padding-bottom: 0px; float: right;
-  }
+	.iq-footer .iq-copyright a {
+	font-size: 10px; margin-right: 2px; padding: 0px;
+ }
 
 /*---------------------------------------------------------------------
                                 Instafeed
@@ -534,61 +549,39 @@ instagram_feed {
 .iq-related-widget .iq-widget-title { margin-bottom: 15px; font-size: 24px; }
 
 /*---------------------------------------------------------------------
-                             Blog - SideBar
+                              Blog Page
 -----------------------------------------------------------------------*/
-.iq-post-sidebar { height: 100%; }
-.iq-sidebar-widget { margin-bottom: 0px; padding: 20px 20px; border-top: 1px solid #ededed; border-radius: 0px; }
-.iq-sidebar-widget:last-child { margin-bottom: 0; }
-.iq-sidebar-widget .iq-widget-title { margin-bottom: 15px; font-size: 24px; }
+.iq-page-blog .iq-blog-box { box-shadow: none; border: 1px solid #ededed; }
+.iq-blog-box .iq-get-in { margin-top: 0; box-shadow: none; }
 
-/*widget-menu*/
-.iq-widget-menu { position: relative; }
-.iq-widget-menu ul li a { font-size: 14px; display: block; color: #2c3e50; position: relative; }
-.iq-widget-menu i { padding-top: 4px; position: absolute; right: 18px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
-.iq-widget-menu ul li a span { padding: 5px 10px 5px 0; display: block; font-size: 14px; }
-.iq-widget-menu ul li a span:hover { text-decoration: none; color: #adadad; }
-.iq-widget-menu ul li.active { border-bottom: none; }
-.iq-widget-menu ul li.hover a { color: #adadad; }
-.iq-widget-menu ul li.hover a span { background: transparent; color: #adadad; }
-.iq-widget-menu ul ul li a span { color: #1a1a1a; }
-.iq-widget-menu ul ul li a span:hover { color: #adadad; }
-.iq-widget-menu ul ul { display: none; padding-left: 20px; }
-.iq-widget-menu ul ul a { display: block; color: #1a1a1a; font-size: 14px; }
-.iq-widget-menu ul ul a:hover { color: #adadad; }
-.iq-widget-menu ul li.active i { transform: rotate(90deg); }
+/* Comments Box */
+.iq-comment-list li { margin-top: 25px; margin-bottom: 0; vertical-align: top; padding: 0; position: relative; }
+.iq-comment-list .iq-comments-media { padding: 15px 15px 30px; border-radius: 0px; border-bottom: 1px solid #eee; }
+.iq-comment-list li:last-child .iq-comments-media { border-bottom: none; padding-bottom: 0; }
+.iq-comment-list ul { padding-left: 60px; }
+.iq-comment-list .reply { position: absolute; line-height: 22px; margin: 0; padding: 2px 16px; font-size: 11px; right: 0; top: 0; font-weight: 500; color: #fff; }
+.iq-comment-list .reply:hover { color: #fff; }
+.iq-comment-list .iq-comments-media .iq-comments-info .reply { color: #ffffff; }
 
-/*SideBar - Search*/
-.iq-sidebar-widget .iq-widget-search { position: relative; }
-.iq-sidebar-widget .iq-widget-search input { padding-right: 40px; box-shadow: none; color: #2c3e50; height: 50px; border: 2px solid #f2f2f2; background: #ffffff; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
-.iq-sidebar-widget .iq-widget-search input:focus { background: #ffffff; }
-.iq-sidebar-widget .iq-widget-search i { position: absolute; right: 8px; color: #adadad; cursor: pointer; padding: 16px 12px; font-size: 18px; }
-.iq-sidebar-widget .iq-widget-search input:focus { border-color: #adadad; }
+.usage span {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 100px;
+  padding-bottom: 5px;
+}
 
-/*SideBar - Tags*/
-.iq-tags li { padding-left: 2px; display: inline-block; padding-right: 2px; margin: 0 0 15px; }
-.iq-tags li a { background: transparent; color: #666; padding: 4px 8px; border: 1px solid #666; border-radius: 0; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
-.iq-tags li a:hover { border-color: #adadad; background: none; color: #adadad; }
-
-/* Meta - SideBar */
-.iq-widget-archives li { margin: 10px 0; }
-.iq-widget-archives li a { color: #666; }
-.iq-widget-archives li a i { font-size: 16px; margin-right: 5px; }
-.iq-widget-archives li a:hover { margin-left: 5px; color: #adadad; }
-
+.featured .post {
+	height: 200px; }
+	
 /*---------------------------------------------------------------------
-                            Home grid
+                            Home gird
 -----------------------------------------------------------------------*/
 .content { position: relative; --pieces-width: 30vw; }
-.content-box { position: relative; --pieces-width: 30vw; background: #ffffff; padding-top: 20px; 
-}
-.grid__item { width: 100%; 
-}
-.grid__item-featured { width: 100%; 
-}
-.grid__item-deco { position: relative; }
+.grid__item { position: relative; cursor: pointer; }
+.grid__item-deco { position: relative; align-self: end; justify-self: end; }
 .grid__item-title { position: relative; }
 .grid .pieces:hover ~ .grid__item-title { color: var(--link-text-hover); }
-.grid .pieces { grid-area: 1 / 1 / 3 / 2; width: var(--pieces-width); height: calc(var(--pieces-width) * 1.3157); position: relative; }
+.grid .pieces { grid-area: 1 / 1 / 3 / 2; width: var(--pieces-width); height: calc(var(--pieces-width) * 1.3157); position: relative; justify-self: end; }
 .grid .piece { pointer-events: none; filter: grayscale(1); }
 .pieces { display: flex; flex-wrap: wrap; background-size: 100% auto; background-repeat: no-repeat; background-position: 0 0; }
 
@@ -601,7 +594,7 @@ instagram_feed {
 .text-box p { color: #fff; position: relative; }
 .text-box span { display: block; }
 .img-border.right-text .category { -ms-transform: rotate(-270deg); /* IE 9 */ -moz-transform: rotate(-270deg); /* Firefox */ -webkit-transform: rotate(-270deg); /* Safari and Chrome */ -o-transform: rotate(-270deg); /* Opera */ right: -135px; left: inherit; }
-.demo-2 .morph { fill: none; stroke-width: 12px; stroke: #adadad; }
+.demo-2 .morph { fill: none; stroke-width: 12px; stroke: #fa7b80; }
 .img-border { position: relative; overflow: hidden; }
 .img-border img { max-width: 100%; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .content-wrap:hover .img-border img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }

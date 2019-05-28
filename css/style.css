@@ -553,10 +553,10 @@ header.hd-border.menu-sticky { box-shadow: none; }
                                 404 Error
 -----------------------------------------------------------------------*/
 .iq-error { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.iq-error h1 { display: inline; font-family: Roboto; font-size: 15px; font-weight: 300; line-height: 80px; }
-.iq-error h2 { display: inline; font-family: Modak; font-size: 60px; font-weight: 600; line-height: 30px; }
-.iq-error h3 { display: inline; font-family: Raleway; font-style: italic; font-size: 20px; font-weight: 300; line-height: 30px; }
-.iq-error h4 { display: inline; font-family: Abel; font-size: 18px; font-weight: 600; color: #1a1a1a; text-decoration: underline; line-height: 50px; }
+.iq-error h1 { display: inline; font-family: Roboto; font-size: 15px; font-weight: 300; line-height: 15px; }
+.iq-error h2 { display: inline; font-family: Modak; font-size: 60px; font-weight: 600; line-height: 60px; }
+.iq-error h3 { display: inline; font-family: Raleway; font-style: italic; font-size: 20px; font-weight: 300; line-height: 20px; }
+.iq-error h4 { display: inline; font-family: Abel; font-size: 18px; font-weight: 600; color: #1a1a1a; text-decoration: underline; line-height: 40px; }
 .iq-error input { width: 100%; border: none; box-shadow: none !important; border-bottom: 1px solid #dddddd !important; height: 45px; border-radius: 0; min-width: 300px; }
 .iq-error .iq-subscribe { text-align: center; display: inline-block; }
 

@@ -34,19 +34,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- Web Clip Icon -->
     <link rel="apple-touch-icon" href="images/favicon.ico" />    
-	
-	<style>
-		.image-swap {
-		    width: 125px;
-		    height: 125px;
-		    background-image: url('images/portfolio/mail.png');
-		    background-size: 100%;
-		    background-position: center center;
-		}
-		.image-swap:hover {
-		    background-image: url('images/portfolio/mail.gif');
-		}
-	</style>
 
 	<body>
 	
@@ -64,10 +51,10 @@
 	    <section id="portfolio">
 	        <div class="container">
 	            <div class="row justify-content-center">
-					<div class="col-md-2 iq-mt-50">
-					    <div class="clearfix">
-					        <a href="mailto:louis.an.yau@gmail.com"><img class="img-fluid" src="images/portfolio/style+portfolio+header.png"></a>
-					    </div>
+					<div class="align-items-start iq-mt-50">
+						<div class="heading-title">
+							<img class="img-fluid" src="images/portfolio/style+portfolio+header.png"  width="40%">
+						</div>
 					</div>
 	                <div class="col-md-12 iq-mt-50">
 	                    <div class="clearfix">
@@ -114,9 +101,13 @@
 					        <img class="img-fluid" src="images/portfolio/style+portfolio+9.jpg" width="100%">
 					    </div>
 					</div>
-					<div class="col-md-2 iq-mtb-70">
-					    <div class="image-swap"></div>
+					
+					<div class="align-items-start iq-mtb-70">
+						<a href="mailto:louis.an.yau@gmail.com">
+							<img id="mailbox" src="images/portfolio/mail.png" width="125px">
+						</a>
 					</div>
+					
 	    </section>
 	</div>
 	<!--======= End Portfolio =======-->
@@ -137,6 +128,18 @@
     <!-- LightWidget -->
     <script src="js/lightwidget.js"></script>
     <script id="dsq-count-scr" src="//louis-yau.disqus.com/count.js" async></script>
+	<script>
+	    $(function() {
+	        $("#mailbox").hover(
+	            function() {
+	                $(this).attr("src", "images/portfolio/mail.gif");
+	            },
+	            function() {
+	                $(this).attr("src", "images/portfolio/mail.png");
+	            }                         
+	        );                  
+	    });
+	</script>
    
 	</body>
 </html>
